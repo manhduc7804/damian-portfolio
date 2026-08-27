@@ -37,10 +37,10 @@
     .text-link svg{width:19px;height:19px}
     .text-link svg:last-child{width:16px}
 
-    .signal-card{width:250px;height:250px;justify-self:center;position:relative;overflow:visible;background:transparent;border:0;border-radius:0;box-shadow:none;flex-shrink:0}
-    .signal-card:before{content:"";position:absolute;inset:12px -8px -10px 12px;border-radius:50%;background:rgba(116,243,206,.13);border:1px solid rgba(0,169,128,.12);z-index:0}
-    .portrait{position:relative;z-index:1;display:block;width:100%;height:100%;object-fit:cover;object-position:center center;border-radius:50%;border:6px solid #fff;box-shadow:0 14px 32px rgba(17,21,19,.14),0 0 0 1px rgba(17,21,19,.08);background:#55575b;filter:none;-webkit-backface-visibility:hidden;backface-visibility:hidden;image-rendering:auto}
-    .portrait-card:after{content:"";position:absolute;z-index:2;inset:0;border-radius:50%;box-shadow:inset 0 0 0 1px rgba(255,255,255,.32);pointer-events:none}
+    .signal-card{width:250px;height:250px;justify-self:center;position:relative;overflow:hidden;background:#8b8c91;border:6px solid #fff;border-radius:50%;box-shadow:0 12px 28px rgba(17,21,19,.12);flex-shrink:0}
+    .signal-card:before{display:none!important}
+    .portrait{position:relative;z-index:1;display:block;width:100%;height:100%;object-fit:cover;object-position:center 48%;border:0;border-radius:0;box-shadow:none;background:transparent;transform:scale(1.09);transform-origin:center center;-webkit-backface-visibility:hidden;backface-visibility:hidden}
+    .portrait-card:after{display:none!important}
     .portrait-shade,.signal-top,.signal-foot,.portrait-marker,.signal-label{display:none!important}
 
     .ticker{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:17px 0;overflow:hidden;white-space:nowrap;font:800 11px/1 ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.12em}
@@ -172,9 +172,8 @@
       .hero{padding-top:36px;padding-bottom:44px}
       .hero h1{font-size:44px}
       .hero-actions{align-items:flex-start;flex-direction:column}
-      .signal-card{width:180px;height:180px}
-      .signal-card:before{inset:8px -6px -7px 8px}
-      .portrait{border-width:4px}
+      .signal-card{width:180px;height:180px;border-width:4px}
+      .portrait{transform:scale(1.09)}
       .section-heading{grid-template-columns:1fr;gap:24px}
       .project-card{grid-template-columns:1fr;gap:18px}
       .project-meta{justify-content:space-between}
@@ -219,7 +218,7 @@
       <div class="hero-actions"><a class="primary-button" href="#work">Explore selected work <span>↓</span></a><a class="text-link" href="https://github.com/manhduc7804" target="_blank" rel="noreferrer">GitHub ↗</a></div>
     </div>
     <div class="signal-card portrait-card" aria-label="Portrait of Damian Nguyen">
-      <img class="portrait" src="assets/damian-headshot.jpg?v=3" alt="Damian Nguyen" width="1024" height="1024" decoding="async" fetchpriority="high">
+      <img class="portrait" src="assets/damian-headshot.jpg?v=11" alt="Damian Nguyen" width="1024" height="1024" decoding="async" fetchpriority="high">
     </div>
   </section>
 
